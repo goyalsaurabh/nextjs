@@ -1,5 +1,8 @@
 import Link from "next/link";
+//import { useRouter } from "next/router";
+
 const errorPage = () => {
+    //const router = useRouter();
     return (
         <>
         <nav>
@@ -25,7 +28,9 @@ const errorPage = () => {
              <div className="notfound">
                  <div className="notfound-404">
                      <h1>We are sorry, Page not found!</h1>
-                     <a href="/">Back to Homepage</a>
+                     <Link  href="/">
+                        <a>Back to Homepage</a>
+                     </Link>
                  </div>
              </div>
          </div>   
