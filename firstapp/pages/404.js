@@ -1,8 +1,8 @@
 import Link from "next/link";
-//import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 const errorPage = () => {
-    //const router = useRouter();
+    const router = useRouter();
     return (
         <>
         <nav>
@@ -28,9 +28,7 @@ const errorPage = () => {
              <div className="notfound">
                  <div className="notfound-404">
                      <h1>We are sorry, Page not found!</h1>
-                     <Link  href="/">
-                        <a>Back to Homepage</a>
-                     </Link>
+                        <a onClick={() => router.push('/')}>Back to Homepage</a>
                  </div>
              </div>
          </div>   
