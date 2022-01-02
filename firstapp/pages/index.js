@@ -1,26 +1,13 @@
-import Navbar from "../components/Navbar";
-import styles from "../styles/index.module.css";
+import Header from "../components/Header";
+import Head from "next/head";
 
 const index  = () => {
  return (
    <>
-     <header className={styles.header}>
-        <div >
-         <Navbar/>
-      </div>
-
-      <div className={styles.text_box}>
-         <h1 className={styles.heading_primary}>
-            <span className={styles.heading_primary_main}>
-               Welcome to the world of ReactJS
-            </span>
-            <span className={styles.saurabhtext}>Love with JavaScript</span>
-         </h1>
-         <a href="#" className={`${styles.btn} ${styles.btn_white} ${styles.btn_animation}`}>
-            SaurabhGoyal Technical Blog
-         </a>
-      </div>
-      </header>
+     <Head>
+        <title>Home Page</title>
+     </Head>
+     <Header />
    </>
    );
 };
