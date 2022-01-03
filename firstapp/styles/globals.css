@@ -190,6 +190,9 @@ body {
   display: flex;
   justify-content: flex-start;
 }
+.ssr-styles * {
+  text-align: left;
+}
 
 .ssr-styles:last-child {
   margin-bottom: 100px;
