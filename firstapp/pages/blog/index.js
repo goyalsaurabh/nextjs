@@ -11,7 +11,7 @@ export const getStaticProps = async () => {
 const blog  = ({data}) => {
     return <>
       <Navbar />
-      {data.map((curElem)=> {
+      {data.slice(0,5).map((curElem)=> {
          return (
             <div key={curElem.id} className="ssr-styles">
                <h3>{curElem.id}</h3>
